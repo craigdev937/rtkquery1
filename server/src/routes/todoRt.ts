@@ -1,8 +1,13 @@
 import express from "express";
-import { HomeIndex } from "../controllers/todoCon";
+import { CreateTodo, DeleteTodo, FetchAllTodos, GetOneTodo, 
+    UpdateTodo } from "../controllers/todoCon";
 
 export const todoRt: express.Router = express.Router();
-    todoRt.get("/", HomeIndex);
+    todoRt.post("/", CreateTodo);
+    todoRt.get("/", FetchAllTodos);
+    todoRt.get("/:id", GetOneTodo);
+    todoRt.put("/:id", UpdateTodo);
+    todoRt.delete("/:id", DeleteTodo);
 
 
 
