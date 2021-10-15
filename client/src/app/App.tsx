@@ -16,4 +16,24 @@ export const App = (): JSX.Element => {
 
 
 
+// import { ApiProvider } from "@reduxjs/toolkit/query/react";
+// import { TodoAPI } from "../global/TodoAPI";
+
+// export const App = (): JSX.Element => {
+//     return (
+//         <ApiProvider api={TodoAPI}>
+//             <React.StrictMode>
+//                 <Main />
+//             </React.StrictMode>
+//         </ApiProvider>
+//     );
+// };
+
+
+
+
+
+
+
+
 
