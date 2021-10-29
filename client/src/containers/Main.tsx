@@ -18,6 +18,7 @@ export const Main = (): JSX.Element => {
     );
 
     const textRef = React.useRef<HTMLInputElement>(null);
+
     const onAdd = React.useCallback(
         () => addTodo(textRef.current!.value ?? ""),
         [addTodo]

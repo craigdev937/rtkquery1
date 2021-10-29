@@ -2,11 +2,11 @@ export interface ITodo {
     id: number,
     text: string,
     active: boolean,
-    done: boolean,
+    done: boolean
 };
 
-// todo: ITodo
-// todos: ITodo[]
-
+// export interface ITodos {
+//     todos: ITodo[]
+// };
 
 

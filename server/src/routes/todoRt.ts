@@ -1,15 +1,15 @@
 import express from "express";
-import { CreateTodo, DeleteTodo, FetchAllTodos, GetOneTodo, 
-    UpdateTodo } from "../controllers/todoCon";
+import { CreateTodo, GetOneTodo, FetchAllTodos, 
+    UpdateTodo, DeleteTodo } from "../controllers/todoCon";
 
 export const todoRt: express.Router = express.Router();
-    todoRt.post("/", CreateTodo);
-    todoRt.get("/", FetchAllTodos);
-    todoRt.get("/:id", GetOneTodo);
-    todoRt.put("/:id", UpdateTodo);
-    todoRt.delete("/:id", DeleteTodo);
+    todoRt.post("/todos", CreateTodo);
+    todoRt.get("/todos", FetchAllTodos);
+    todoRt.get("/todos/:id", GetOneTodo);
+    todoRt.put("/todos/:id", UpdateTodo);
+    todoRt.delete("/todos/:id", DeleteTodo);
 
 
-
+    
 
 

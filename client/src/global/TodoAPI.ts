@@ -15,11 +15,9 @@ export const TodoAPI = createApi({
         addTodo: builder.mutation<string, string>({
             query(text) {
                 return {
-                    url: `create`,
+                    url: `todos`,
                     method: "POST",
-                    body: {
-                        text,
-                    },
+                    body: text,
                 };
             },
             invalidatesTags: [{ type: "Todos", id: "LIST" }],
